@@ -1566,3 +1566,6 @@ body {
 .reveal section .icon-hello {
   vertical-align: bottom;
 }
+.reveal pre {
+  width: 100% !important;
+}
