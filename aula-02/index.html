@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Programa de Capacitação Compasso - Módulo Front end</title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="TObias Rocha da Rosa">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../assets/css/reveal.css">
+		<link rel="stylesheet" href="../assets/css/theme/beige.css" id="theme">
+		<link rel="stylesheet" href="../assets/lib/css/zenburn.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Programa de Capacitação Compasso</h2>
+					<h3>Módulo front-end - aula 2</h3>
+					<h4>Trabalhando com imagens, caminho relativo e formulários</h4>
+					<p>
+						<small>Tobias Rocha da Rosa</small>
+					</p>
+				</section>
+				<section>
+					<h2>Trabalhando com imagens</h2>
+					<p>A tag utilizada para inserir imagens é a tag &lt;img /&gt;, que pode ser aberta e fechada no mesmo bloco. 
+						Também precisamos informar o endereço da imagem ao navegador, para isso utilizamos o atributo src.</p>	
+				</section>
+			</div>
+		</div>
+
+		<script src="../assets/lib/js/head.min.js"></script>
+		<script src="../assets/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', 
+				dependencies: [
+					{ src: '../assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../assets/plugin/search/search.js', async: true },
+					{ src: '../assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../assets/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
