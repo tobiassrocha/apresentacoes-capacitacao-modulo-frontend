@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Programa de Capacitação Compasso - Módulo Front end</title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="TObias Rocha da Rosa">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../assets/css/reveal.css">
+		<link rel="stylesheet" href="../assets/css/theme/beige.css" id="theme">
+		<link rel="stylesheet" href="../assets/lib/css/zenburn.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Programa de Capacitação Compasso</h2>
+					<h3>Módulo front-end - aula 2</h3>
+					<h3>Introdução ao css</h3>
+					<p>
+						<small>Tobias Rocha da Rosa</small>
+					</p>
+				</section>
+				<section>
+					<h2>Expectativa</h2>
+					<img src="../assets/img/gif/01.gif">
+				</section>
+				<section>
+						<h2>Realidade</h2>
+						<img src="../assets/img/gif/02.gif">
+					</section>
+				<section>
+					<h2>CSS</h2>
+					<p>O Cascading Style Sheets (CSS) é uma linguagem utilizada para definir a apresentação (aparência) de documentos que 
+						adotam para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML e etc..).</p>
+				</section>
+				<section>
+					<h2>Por que o CSS foi criado?</h2>
+					<p class="fragment">Com a evolução dos recursos de programação, as tecnologias estavam adotando cada vez mais estilos 
+						e variações para deixá-las mais elegantes e atrativas para os usuários.</p>
+					<p class="fragment">O css foi desenvolvido para habilitar a separação do conteúdo e formato de um documento 
+						de sua apresentação, incluindo elementos como cores, formatos de fontes e layout.</p>
+				</section>
+				<section>
+					<h2>Inserindo css na página</h2>
+					<p>Existem 3 formas para incluirmos o css em uma página:</p>
+					<ul>
+						<li class="fragment">
+							<span>Inline</span>
+							<pre><code data-trim contenteditable>
+									<p style="color: blue">Parágrafo com fonte azul.</p>
+							</code></pre>
+						</li>
+						<li class="fragment">
+							<span>Interno</span>
+							<pre><code data-trim contenteditable>
+									<head>
+										<style type="text/css">
+											seletor { propriedade: valor; }
+										</style>
+									</head>
+							</code></pre>
+						</li>
+						<li class="fragment">
+							<span>Externo</span>
+							<pre><code data-trim contenteditable>
+									<head>
+										<link rel="stylesheet" type="text/css" href="styles.css">
+									</head>
+							</code></pre>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Classes</h2>
+					<p>As classes são uma forma de identificar um grupo de elementos. Através delas, 
+						pode-se atribuir formatação a VÁRIOS elementos de uma vez.</p>
+					<pre class="fragment"><code data-trim contenteditable>
+						.classe1 {
+							background: blue;
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Id</h2>
+					<p>As ids são uma forma de identificar um elemento, e devem ser ÚNICAS para cada elemento. É como se fossem 
+						impressões digitais de nossos dedos ou RGs. Através delas, pode-se atribuir formatação à um elemento em especial. </p>
+					<pre class="fragment"><code data-trim contenteditable>
+						#idUm {
+							background: blue;
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Seletores encadeados, agrupados e propriedades</h2>
+				</section>
+				<section>
+					<h2>Exercício Prático</h2>
+					<p>Realizar melhorias visuais nas páginas criadas nas aulas anteriores</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="../assets/lib/js/head.min.js"></script>
+		<script src="../assets/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', 
+				dependencies: [
+					{ src: '../assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../assets/plugin/search/search.js', async: true },
+					{ src: '../assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../assets/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
